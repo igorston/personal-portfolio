@@ -1,5 +1,5 @@
 .project-list,
-#project-box,
+#projectContent,
 pre {
   width: 100%;
 }
@@ -15,7 +15,7 @@ pre {
   flex-wrap: wrap;
 }
 
-#project-box {
+#projectContent {
   border: 5px solid var(--color-5);
   min-height: 500px;
   padding: 1.5rem;
@@ -23,26 +23,26 @@ pre {
   text-align: left;
 }
 
-#project-box h2 {
+#projectContent h2 {
   font-size: 2rem;
   font-weight: bold;
 }
 
-#project-box h3 {
+#projectContent h3 {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-#project-box ul {
+#projectContent ul {
   list-style: circle;
   margin-left: 20px;
 }
 
-#project-box strong {
+#projectContent strong {
   font-weight: bold;
 }
 
-#project-box a {
+#projectContent a {
   text-decoration: none;
   color: var(--color-1);
   text-shadow: 1px 1px var(--color-6);
