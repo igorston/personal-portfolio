@@ -1,0 +1,24 @@
+.contact {
+  width: 100%;
+}
+
+.contact h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.contact p {
+  margin-bottom: 2rem;
+}
+
+.social-media ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.social-media li {
+  max-width: 96px;
+  height: auto;
+}

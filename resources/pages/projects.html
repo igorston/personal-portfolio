@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevTech - Douglas</title>
+    <link
+      rel="icon"
+      href="./resources/images/favicon-site.png"
+      type="image/png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <script src="../js/scrypt.js" defer></script>
+    <script src="../js/projects.js" defer></script>
+  </head>
+  <body>
+    <header class="navBar">
+      <div class="logo">
+        <a href="../../index.html"
+          ><img
+            src="../images/logo-devtech.jpeg"
+            alt="Logotipo DevTech"
+            type="image/jpeg"
+        /></a>
+        <span>DevTech TI</span>
+      </div>
+      <nav id="menu">
+        <button id="navButton" class="button">
+          <span>MENU</span>
+          <img src="../images/icon-menu.png" type="image/png" />
+        </button>
+        <ul id="navMenu">
+          <li class="button"><a href="../../index.html">HOME</a></li>
+          <li class="button">
+            <a href="../pages/projects.html">PROJETOS</a>
+          </li>
+          <li class="button">
+            <a href="../pages/Contact.html">CONTATO</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="project-list">
+        <h1>Projetos</h1>
+        <ul>
+          <li class="button" id="mixed-message">Gerador de mensagens</li>
+          <li class="button" id="portfolio-site">Website Portfólio</li>
+        </ul>
+      </section>
+      <section id="project-box">
+        <span>Selecione um projeto.</span>
+      </section>
+      <button id="backToTopBtn" onclick="scrollToTop()">Voltar ao Topo</button>
+    </main>
+    <footer>
+      <span>&copy; Copyright 2024 - DevTech TI</span>
+    </footer>
+  </body>
+</html>

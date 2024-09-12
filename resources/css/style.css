@@ -1,0 +1,167 @@
+/* Global Variables */
+:root {
+  --color-1: #000000;
+  --color-2: #ffffff;
+  --color-3: #00ff00;
+  --color-4: #ffd700;
+  --color-5: #001027;
+  --color-6: #00ffff;
+  --font-1: "Ubuntu Mono";
+  --font-2: "Inconsolata";
+  --font-3: "Roboto Mono";
+}
+
+* {
+  font-family: var(--font-1), var(--font-2), var(--font-3), monospace;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  transition: all 300ms ease;
+}
+
+.navBar {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  padding: 0 15px;
+  background-color: var(--color-5);
+  border-bottom: 5px solid var(--color-5);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+  width: auto;
+  border-radius: 49%;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+.logo span {
+  font-size: 3rem;
+  color: var(--color-2);
+  font-family: var(--font-3);
+  font-weight: bold;
+}
+
+.button {
+  padding: 10px;
+  display: flex;
+  margin: 10px;
+  height: 80%;
+  width: 10rem;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-6);
+  border: 1px solid var(--color-5);
+  box-shadow: 5px 5px var(--color-5);
+  font-family: var(--font-1);
+  font-weight: bold;
+}
+
+.button a {
+  text-decoration: none;
+  color: var(--color-1);
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(to bottom, var(--color-6), var(--color-3));
+  cursor: pointer;
+}
+
+.button:active {
+  transform: scale(1);
+}
+
+.button img {
+  height: 60%;
+}
+
+#navMenu {
+  display: none;
+}
+
+main {
+  width: 100%;
+  padding: 120px 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: var(--color-6);
+  color: var(--color-1);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+  border: 2px solid var(--color-5);
+}
+
+#backToTopBtn:hover {
+  opacity: 1; /* Botão fica mais visível ao passar o mouse */
+}
+
+footer {
+  position: fixed;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  padding: 0 15px;
+  background-color: var(--color-5);
+  border-top: 1px solid var(--color-1);
+  padding: 10px;
+  bottom: 0;
+}
+
+footer span {
+  font-size: 1rem;
+  color: var(--color-2);
+  font-family: var(--font-3);
+}
+
+@media only screen and (max-width: 648px) {
+  * {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .navBar span {
+    display: none;
+  }
+
+  footer {
+    text-align: left;
+  }
+
+  #backToTopBtn {
+    bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  footer span {
+    display: none;
+  }
+}
